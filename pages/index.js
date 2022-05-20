@@ -9,24 +9,24 @@ export default function Home() {
   const openLinkedIn = (e) => {
     e.preventDefault();
     const url = "https://www.linkedin.com/in/alfred-holland-72556a187/";
-    window.location.href = url;
+    window.open(url);
   }
 
   const openGitHub = (e) => {
     e.preventDefault();
     const url = "https://github.com/aholl7";
-    window.location.href = url;
+    window.open(url);
   }
 
   const displayResume = (e) => {
     e.preventDefault();
     const url = "https://drive.google.com/file/d/1k4uWGWAGltnCodfkJrWE5ibRCsohJzGl/view?usp=sharing";
-    window.location.href = url;
+    window.open(url);
   }
 
   const openEmail = (e) => {
     e.preventDefault();
-    window.location.href="mailto:alfredholland6@gmail.com";
+    window.open("mailto:alfredholland6@gmail.com");
   }
 
   return (
