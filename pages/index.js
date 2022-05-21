@@ -43,7 +43,7 @@ export default function Home() {
             <div className="mt-40 ml-40">
               <h1 className="text-5xl font-bold">Welcome! I'm Alfred!</h1><br />
               <p className="text-3xl font-semibold text-gray-400">Technology Analyst</p><br />
-              <p className="text-3xl text-gray-400 w-2/3">I genuinely enjoy seeking learning opportunities and producing high quality work</p>
+              <p className="text-2xl text-gray-400 w-2/3">I genuinely enjoy seeking learning opportunities and producing high quality work</p>
             </div><br />
             <div className="flex ml-40">
               <button className="bg-red-500 w-60 font-bold text-xl pt-3 pb-3 rounded-l rounded-r" onClick={(e) => displayResume(e)}>View Resume</button>

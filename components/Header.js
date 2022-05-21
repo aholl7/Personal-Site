@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <div className="w-screen">
+        <div>
             <Image src={Logo} height={90} width={152}/>
             <NavBar />
         </div>
