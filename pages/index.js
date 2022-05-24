@@ -37,21 +37,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="w-4/5 ml-auto mr-auto">
         <Header />
         <div className="grid gap-2 grid-cols-2">
           <div>
-            <div className="mt-40 ml-40">
+            <div className="mt-40">
               <h1 className="text-5xl font-bold">Welcome! I'm Alfred!</h1><br />
               <p className="text-3xl font-semibold text-gray-400">Technology Analyst</p><br />
               <p className="text-2xl text-gray-400 w-2/3">I genuinely enjoy seeking learning opportunities and producing high quality work</p>
             </div><br />
-            <div className="flex ml-40">
+            <div className="flex">
               <button className="bg-red-500 w-60 font-bold text-xl pt-3 pb-3 rounded-l rounded-r" onClick={(e) => displayResume(e)}>View Resume</button>
               <button className="bg-red-500 ml-10 font-bold w-60 text-xl rounded-l rounded-r" onClick={(e) => openEmail(e)}>Contact Me</button>
             
             </div><br /><br />
-            <div className="flex ml-40">
+            <div className="flex">
               <div>
                 <Image src={LinkedIn} height={40} width={40} className="cursor-pointer" onClick={(e) => openLinkedIn(e)}/>
               </div>

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <div>
-            <Image src={Logo} height={90} width={152}/>
+        <div className="grid grid-cols-2 gap-4">
+            <h1 className="text-5xl font-bold mt-5 text-red-500">{"< "}AH{" />"}</h1>
             <NavBar />
         </div>
 

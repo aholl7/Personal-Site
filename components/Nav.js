@@ -1,7 +1,7 @@
 import Link from 'next/link';
 const NavBar = () => {
     return (
-        <nav className="inline-flex flex-row float-right mx-auto">
+        <nav className="inline-flex flex-row float-right mx-auto font-semibold mt-2">
             <Link href="/">
                 <a className="p-4 m-2 text-xl hover:text-red-500">Home</a>
             </Link>
@@ -11,8 +11,8 @@ const NavBar = () => {
             <Link href="/about-me/#skills">
                 <a className="p-4 m-2 text-xl hover:text-red-500">Skills</a>
             </Link>
-            <Link href="/portfolio">
-                <a className="p-4 m-2 text-xl hover:text-red-500">Portfolio</a>
+            <Link href="/projects">
+                <a className="p-4 m-2 text-xl hover:text-red-500">Projects</a>
             </Link>
             <Link href="/blog">
                 <a className="p-4 m-2 text-xl hover:text-red-500">Blog</a>
