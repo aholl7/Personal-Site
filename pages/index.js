@@ -5,6 +5,7 @@ import Image from 'next/image';
 import GitHub from "../public/images/GitHub.png";
 import LinkedIn from "../public/images/LinkedIn.png";
 import Link from 'next/link';
+
 export default function Home() {
   const openLinkedIn = (e) => {
     e.preventDefault();
@@ -30,7 +31,7 @@ export default function Home() {
   }
 
   return (
-    <div className="container w-screen">
+    <div>
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -38,7 +39,7 @@ export default function Home() {
 
       <main>
         <Header />
-        <div className="grid gap-2 grid-cols-2 w-screen">
+        <div className="grid gap-2 grid-cols-2">
           <div>
             <div className="mt-40 ml-40">
               <h1 className="text-5xl font-bold">Welcome! I'm Alfred!</h1><br />
@@ -62,7 +63,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="mt-32">
+            <div className="mt-32 ml-7">
               <Image src={HomeImage} />
             </div>
             
