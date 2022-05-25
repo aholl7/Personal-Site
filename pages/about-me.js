@@ -13,7 +13,7 @@ const AboutMe = () => {
                 <title>About</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="pb-10 w-4/5 ml-auto mr-auto">
+            <main className="lg:w-11/12 md:w-full ml-auto mr-auto relative pb-10">
                 <Header />
                 <div>
                     <h1 className="text-5xl mt-20 font-bold">ABOUT ME</h1>
