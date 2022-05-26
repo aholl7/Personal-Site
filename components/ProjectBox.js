@@ -31,7 +31,7 @@ const ProjectBox = (props) => {
                                 </span>
                             )
                         }else{
-                            if(width <= 390){
+                            if(width <= 390 && typeof window !== 'undefined'){
                                 if(id < 4){
                                     return (
                                         <span className="ml-2 text-xs font-semibold inline-block py-1 px-2 rounded text-red-600 bg-red-200">
@@ -57,7 +57,7 @@ const ProjectBox = (props) => {
                 </div>
                 <div>
                 {props.tags.map((val, id) => {
-                    if(width <= 390 && id >= 4){
+                    if(width <= 390 && id >= 4 && typeof window !== 'undefined'){
                         return (
                             <span className="mt-2 text-xs font-semibold inline-block py-1 px-2 rounded text-red-600 bg-red-200">
                                 {val}
