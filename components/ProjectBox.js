@@ -1,6 +1,7 @@
-
+import useWindowDimensions from "./windowDimensions";
 
 const ProjectBox = (props) => {
+    const { height, width } = useWindowDimensions();
     const viewRep = (e) => {
         e.preventDefault(e);
         if(props.isPublic === false){
@@ -10,7 +11,7 @@ const ProjectBox = (props) => {
         }
     }
     return (
-        <div className="shadow-2xl bg-slate-800  rounded xl:h-72 h-80 w-full">
+        <div className="shadow-2xl bg-slate-800  rounded xl:h-72 h-96 w-full">
             <div className="w-4/5 ml-auto mr-auto">
                 <div class="grid grid-cols-2 gap-2">
                     <h1 className="text-3xl mt-10 font-bold">{props.title}</h1>
@@ -19,8 +20,9 @@ const ProjectBox = (props) => {
                     </div>
                     
                 </div>
+            
                 
-                <div className="flex mt-8">
+                <div className="flex mt-5">
                     {props.tags.map((val, id) => {
                         if(id === 0){
                             return (
@@ -28,12 +30,23 @@ const ProjectBox = (props) => {
                                     {val}
                                 </span>
                             )
-                        }else {
-                            return (
-                                <span className="ml-2 text-xs font-semibold inline-block py-1 px-2 rounded text-red-600 bg-red-200">
-                                    {val}
-                                </span>
-                            )
+                        }else{
+                            if(width <= 390){
+                                if(id < 4){
+                                    return (
+                                        <span className="ml-2 text-xs font-semibold inline-block py-1 px-2 rounded text-red-600 bg-red-200">
+                                            {val}
+                                        </span>
+                                    )
+                                }
+                            }else{
+                                return (
+                                    <span className="ml-2 text-xs font-semibold inline-block py-1 px-2 rounded text-red-600 bg-red-200">
+                                        {val}
+                                    </span>
+                                )
+                            }
+                            
                         }
                         
                     }) 
@@ -42,6 +55,21 @@ const ProjectBox = (props) => {
                     
                     
                 </div>
+                <div>
+                {props.tags.map((val, id) => {
+                    if(width <= 390 && id >= 4){
+                        return (
+                            <span className="mt-2 text-xs font-semibold inline-block py-1 px-2 rounded text-red-600 bg-red-200">
+                                {val}
+                            </span>
+                        )
+                        
+                    }
+                        
+                })}
+                </div>
+                
+                
                 <div className="mt-5">
                     <p>
                        {props.description}

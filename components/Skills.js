@@ -4,11 +4,11 @@ const Skills = () => {
     return (
         <div id="skills">
             <br/>
-            <h1 className="text-5xl mt-20 font-bold">SKILLS</h1>
-            <p className="text-gray-400 mt-5">Technologies I have worked with.</p>
+            <h1 className="text-5xl mt-20 font-bold lg:ml-0 ml-2">SKILLS</h1>
+            <p className="text-gray-400 mt-5 lg:ml-0 ml-2">Technologies I have worked with.</p>
             
             
-            <div class="grid grid-cols-3 gap-3 m-auto w-full">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-3 m-auto w-full">
                 <div className="mt-10">
                     <h2 className="text-3xl text-center">Front End</h2>
                     <div className="grid grid-cols-2 gap-2 mt-5">
@@ -42,7 +42,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-10 ml-auto mr-auto">
+                <div className="mt-10 lg:ml-auto lg:mr-auto">
                     <h2 className="text-3xl text-center">Back End</h2>
                     <div class="grid grid-cols-2 gap-2 mt-5">
                         <div className="text-center">
@@ -57,7 +57,7 @@ const Skills = () => {
             
                     </div>
                 </div>
-                <div className="mt-10 ml-10">
+                <div className="mt-10 lg:ml-10">
                     <h2 className="text-3xl text-center">Tools</h2>
                     <div class="grid grid-cols-2 gap-2 mt-5">
                         <div className="text-center">
@@ -68,7 +68,7 @@ const Skills = () => {
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="ml-auto mr-auto  "height={100} width={100}/>
                             <p className="text-center mt-2 text-lg font-semibold">Git</p>
                         </div>
-                        <div className="text-center ml-5 mt-10">
+                        <div className="text-center lg:ml-5 mt-10">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="ml-auto mr-auto  "height={100} width={100}/>
                             <p className="text-center mt-2 text-lg font-semibold">Figma</p>
                         </div>
@@ -97,7 +97,7 @@ const Skills = () => {
                     
                     
                 </div>
-                <div className="mt-10 ml-10">
+                <div className="mt-10 lg:ml-10 ml-5">
                     <h2 className="text-3xl text-center">Unit Testing</h2>
                         <div class="grid grid-cols-2 gap-2 mt-5">
                             <div className="text-center">

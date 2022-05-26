@@ -17,9 +17,9 @@ const AboutMe = () => {
                 <Header />
                 <div>
                     <h1 className="text-5xl mt-20 font-bold">ABOUT ME</h1>
-                    <div className="grid grid-cols-2 gap-2 mt-20" >
+                    <div className="lg:grid lg:grid-cols-2 lg:gap-0 mt-20" >
                         <div>
-                            <div className="float-right mr-40">
+                            <div className="float-right mr-60 hidden lg:block">
                                 <Image src={Smile} height={340} width={310} />
                             </div>
                             

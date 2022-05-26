@@ -20,7 +20,7 @@ const Portfolio = () => {
                         <ProjectBox 
                             title={"Personal Site"}
                             tags={["ReactJS", "NextJS", "TailwindCSS"]}
-                            description={"This is currently the site you are viewing now!"}
+                            description={"This is currently the site you are viewing now! This site was designed for providing you the ability to learn a little more about me."}
                             link={"https://github.com/aholl7/Personal-Site"}
                             isPublic={true}
                         />

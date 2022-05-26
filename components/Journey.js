@@ -8,12 +8,12 @@ import Image from "next/image";
 const Journey = () => {
     return (
         <div className="mt-32">
-            <h1 className="text-5xl font-bold">MY JOURNEY</h1>
-            <div className="grid grid-cols-2 gap-2 mt-12">
+            <h1 className="text-5xl font-bold lg:ml-0 ml-2">MY JOURNEY</h1>
+            <div className="lg:grid lg:grid-cols-2 lg:gap-2 mt-12">
                 
                 <div>
                     <div className="flex ml-auto mr-0">
-                        <div className="ml-auto mr-0" >
+                        <div className="lg:ml-auto lg:mr-0 ml-2" >
                             <Image src ={GradCap} height={40} width={55}/>
                         </div>
                         
@@ -36,7 +36,7 @@ const Journey = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="flex ml-20">
+                    <div className="flex lg:ml-20 lg:mt-0 ml-2 mt-10">
                         <div>
                             <Image src ={Briefcase} height={40} width={55}/>
                         </div>
