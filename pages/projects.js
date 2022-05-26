@@ -15,8 +15,8 @@ const Portfolio = () => {
                         <h1 className="text-5xl font-bold">PROJECTS</h1>
                         <p className="text-gray-400 mt-5">Here is a collection of my personal projects.</p>
                     </div>
-                    
-                    <div class="xl:grid xl:grid-cols-2 xl:gap-5 xl:w-auto xl:ml-0 xl:mr-0 mt-10 grid grid-cols-1 gap-5 w-11/12 ml-auto mr-auto">
+                     
+                    <div className="xl:grid xl:grid-cols-2 xl:gap-5 xl:w-auto xl:ml-0 xl:mr-0 mt-10 grid grid-cols-1 gap-5 w-11/12 ml-auto mr-auto">
                         <ProjectBox 
                             title={"Personal Site"}
                             tags={["ReactJS", "NextJS", "TailwindCSS"]}
