@@ -1,4 +1,5 @@
 import Header from "../components/Header.js";
+import React, {useEffect } from 'react';
 import Head from "next/head";
 import Image from "next/image";
 import Smile from "../public/images/Smile.png";
@@ -7,14 +8,17 @@ import Skills from "../components/Skills.js";
 
 
 const AboutMe = () => {
+    useEffect(()=> {
+        document.querySelector(".content").style.opacity = "1";
+      }, []);
     return (
         <div>
             <Head>
                 <title>About</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="lg:w-11/12 md:w-full ml-auto mr-auto relative pb-10">
-                <Header />
+            <Header />
+            <main className="content lg:w-11/12 md:w-full ml-auto mr-auto relative pb-10" style={{opacity: "0", transition: "opacity 3s"}}>
                 <div>
                     <h1 className="text-5xl mt-20 font-bold">ABOUT ME</h1>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-0 mt-20" >

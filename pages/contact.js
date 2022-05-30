@@ -1,4 +1,5 @@
 import Header from "../components/Header.js";
+import React, {useEffect } from 'react';
 import PlaceHolder from "../components/placeholder";
 import Head from "next/head";
 import Image from "next/image";
@@ -16,18 +17,23 @@ const Contact = () => {
         const url = "https://www.linkedin.com/in/alfred-holland-72556a187/";
         window.open(url);
     }
+
+    useEffect(()=> {
+        document.querySelector(".content").style.opacity = "1";
+      }, []);
+
     return (
         <div>
             <Head>
                 <title>Contact</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className="lg:w-11/12 md:w-full ml-auto mr-auto relative pb-10">
-                <Header />
+            <Header />
+            <main className="content lg:w-11/12 md:w-full ml-auto mr-auto relative pb-10" style={{opacity: "0", transition: "opacity 3s"}}>
                 <div className="ml-auto mr-auto">
                     <h1 className="text-5xl mt-20 font-bold text-center">CONTACT ME</h1>
                 </div>
-                <div class="xl:grid xl:grid-cols-3 xl:gap-5 xl:w-auto xl:ml-0 xl:mr-0 mt-10 grid grid-cols-1 gap-5 w-11/12 ml-auto mr-auto">
+                <div className="xl:grid xl:grid-cols-3 xl:gap-5 xl:w-auto xl:ml-0 xl:mr-0 mt-10 grid grid-cols-1 gap-5 w-11/12 ml-auto mr-auto">
                       <div>
                           <div className="text-center">
                             <Image src={Email} height={100} width={100} />

@@ -8,7 +8,7 @@ const Skills = () => {
             <p className="text-gray-400 mt-5 lg:ml-0 ml-2">Technologies I have worked with.</p>
             
             
-            <div class="lg:grid lg:grid-cols-3 lg:gap-3 m-auto w-full">
+            <div className="lg:grid lg:grid-cols-3 lg:gap-3 m-auto w-full">
                 <div className="mt-10">
                     <h2 className="text-3xl text-center">Front End</h2>
                     <div className="grid grid-cols-2 gap-2 mt-5">
@@ -44,7 +44,7 @@ const Skills = () => {
                 </div>
                 <div className="mt-10 lg:ml-auto lg:mr-auto">
                     <h2 className="text-3xl text-center">Back End</h2>
-                    <div class="grid grid-cols-2 gap-2 mt-5">
+                    <div className="grid grid-cols-2 gap-2 mt-5">
                         <div className="text-center">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="ml-auto mr-auto  " height={100} width={100} />
                             <p className="text-center mt-2 text-lg font-semibold">Firebase</p>
@@ -59,7 +59,7 @@ const Skills = () => {
                 </div>
                 <div className="mt-10 lg:ml-10">
                     <h2 className="text-3xl text-center">Tools</h2>
-                    <div class="grid grid-cols-2 gap-2 mt-5">
+                    <div className="grid grid-cols-2 gap-2 mt-5">
                         <div className="text-center">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" className="ml-auto mr-auto  " height={100} width={100} />
                             <p className="text-center mt-2 text-lg font-semibold">GitHub</p>
@@ -78,7 +78,7 @@ const Skills = () => {
                 </div>
                 <div className="mt-10">
                     <h2 className="text-3xl text-center">Programming Languages</h2>
-                    <div class="grid grid-cols-2 gap-2 mt-5">
+                    <div className="grid grid-cols-2 gap-2 mt-5">
                         <div className="text-center">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="ml-auto mr-auto" height={100} width={100} />
                             <p className="text-center mt-2 text-lg font-semibold">Python</p>
@@ -99,7 +99,7 @@ const Skills = () => {
                 </div>
                 <div className="mt-10 lg:ml-10 ml-5">
                     <h2 className="text-3xl text-center">Unit Testing</h2>
-                        <div class="grid grid-cols-2 gap-2 mt-5">
+                        <div className="grid grid-cols-2 gap-2 mt-5">
                             <div className="text-center">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/karma/karma-original.svg" className="ml-auto mr-auto  " height={100} width={100} />
                                 <p className="text-center mt-2 text-lg font-semibold">Karma</p>

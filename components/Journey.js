@@ -4,6 +4,7 @@ import PV from "../public/images/PVAMULogo.png";
 import AIG from "../public/images/AIG.png";
 import GF from "../public/images/GeorgeFoundation.png"
 import Image from "next/image";
+import React, {useEffect} from "react";
 
 const Journey = () => {
     return (

@@ -1,4 +1,5 @@
 import Header from "../components/Header.js";
+import React, {useEffect } from 'react';
 import PlaceHolder from "../components/placeholder";
 const Blog = () => {
     return (

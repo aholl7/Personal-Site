@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Header from "../components/Header.js";
+import React, {useEffect } from 'react';
 import HomeImage from "../public/images/homeImage.svg";
 import Image from 'next/image';
 import GitHub from "../public/images/GitHub.png";
 import LinkedIn from "../public/images/LinkedIn.png";
 import Link from 'next/link';
-
 export default function Home() {
   const openLinkedIn = (e) => {
     e.preventDefault();
@@ -29,6 +29,13 @@ export default function Home() {
     e.preventDefault();
     window.open("mailto:alfredholland6@gmail.com");
   }
+  useEffect(()=> {
+    //onload="document.main.style.opacity='1'"
+    //document.body.onload="document.body.style.opacity='1'";
+    //window.alert("Hello")
+    document.querySelector(".content").style.opacity = "1";
+    document.querySelector("#header").style.opacity = "1";
+  }, []);
 
   return (
     <div>
@@ -36,9 +43,11 @@ export default function Home() {
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="lg:w-11/12 md:w-full ml-auto mr-auto relative">
+      <div id="header" style={{opacity: "0", transition: "opacity 3s"}}>
         <Header />
+      </div>
+      
+      <main className=" content lg:w-11/12 md:w-full ml-auto mr-auto relative" style={{opacity: "0", transition: "opacity 3s"}}>
         <div className="md:grid md:gap-2 md:grid-cols-2 md:w-full md:ml-0 md:mr-0 w-11/12 ml-auto mr-auto">
           <div>
             <div className="mt-40 ml-2">
@@ -63,7 +72,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="mt-32 ml-7 hidden md:block">
+            <div className="mt-32 ml-12 hidden md:block">
               <Image src={HomeImage} />
             </div>
             

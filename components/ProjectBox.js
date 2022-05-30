@@ -10,13 +10,20 @@ const ProjectBox = (props) => {
             window.open(props.link);
         }
     }
+
+    const viewDemo = (e) => {
+        e.preventDefault(e);
+        window.open(props.demoLink);
+        
+    }
     return (
-        <div className="shadow-2xl bg-slate-800  rounded xl:h-72 h-96 w-full">
+        <div className="shadow-2xl bg-slate-800 rounded xl:h-72 md:h-[16rem] h-[24rem] w-full" onClick={(e)=>{viewDemo(e)}}>
             <div className="w-4/5 ml-auto mr-auto">
-                <div className="grid grid-cols-2 gap-2">
+                <div className="md:grid md:grid-cols-2 md:gap-2 flex">
                     <h1 className="text-3xl mt-10 font-bold">{props.title}</h1>
-                    <div>
-                        <button className="bg-red-500 ml-10 font-bold w-20 text-sm h-8 rounded-l rounded-r mt-10 float-right" onClick={(e)=>{viewRep(e)}}>GitHub</button>
+                    <div className="md:grid md:grid-cols-2 md:gap-4 hidden">
+                        <button className="bg-red-500 font-bold text-sm h-8 rounded-l rounded-r mt-10 float-right"onClick={(e) => {props.isPublic ? viewRep(e) : props.toggleModal()}}>GitHub</button>
+                        <button className="bg-red-500 font-bold text-sm h-8 rounded-l rounded-r mt-10 float-right" onClick={(e)=>{viewDemo(e)}}>Demo</button>
                     </div>
                     
                 </div>
@@ -75,9 +82,13 @@ const ProjectBox = (props) => {
                        {props.description}
                     </p>
                 </div>
-                
+                <div className="md:hidden grid grid-cols-2 gap-2 mt-5">
+                        <button className="bg-red-500 font-bold text-sm h-8 rounded-l rounded-r float-right" onClick={(e) => {props.isPublic ? viewRep(e) : props.toggleModal()}}>GitHub</button>
+                        <button className="bg-red-500 font-bold text-sm h-8 rounded-l rounded-r float-right" onClick={(e)=>{viewDemo(e)}}>Demo</button>
+                </div>
                 
             </div>
+            
             
             
         </div>
