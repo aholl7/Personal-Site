@@ -17,7 +17,7 @@ const ProjectBox = (props) => {
         
     }
     return (
-        <div className="shadow-2xl bg-slate-800 rounded xl:h-72 md:h-[16rem] h-[24rem] w-full" onClick={(e)=>{viewDemo(e)}}>
+        <div className="shadow-2xl bg-slate-800 rounded xl:h-72 md:h-[16rem] h-[24rem] w-full">
             <div className="w-4/5 ml-auto mr-auto">
                 <div className="md:grid md:grid-cols-2 md:gap-2 flex">
                     <h1 className="text-3xl mt-10 font-bold">{props.title}</h1>
