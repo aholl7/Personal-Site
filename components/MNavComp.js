@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NavComponent = () => {
     return (
-        <div className="z-10 shadow-2xl bg-slate-800 absolute w-full pb-10">
+        <div className="z-10 shadow-2xl bg-slate-800 absolute w-full pb-10 lg:hidden">
             <br />
             <Link href="/">
                 <a className="text-white mt-10 text-xl font-bold ml-2">Home</a>
@@ -15,9 +15,6 @@ const NavComponent = () => {
             </Link><br /><br /><br />
             <Link href="/projects">
                 <a className="text-white mt-5 text-xl font-bold ml-2">Projects</a>
-            </Link><br /><br /><br />
-            <Link href="/blog">
-                <a className="text-white mt-5 text-xl font-bold ml-2">Blog</a>
             </Link><br /><br /><br />
             <Link href="/contact">
                 <a className="text-white mt-5 text-xl font-bold ml-2">Contact</a>
