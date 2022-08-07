@@ -14,7 +14,7 @@ const AboutMe = () => {
     return (
         <div>
             <Head>
-                <title>About</title>
+                <title>About Me</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
