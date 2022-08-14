@@ -83,7 +83,7 @@ const Portfolio = () => {
                             tags={["ReactJS", "NextJS", "ChakraUI", "CSS", "Firebase"]}
                             description={"Money Watcher is a web application built to aid students who are in college to budget their money."}
                             link={"https://github.com/aholl7/BudgetApplicationV2"}
-                            demoLink={"https://github.com/aholl7/BudgetApplication"}
+                            demoLink={"https://drive.google.com/file/d/1faBNfSK26uYGnVOXLnbbjtQsbyZfwV1L/view?usp=sharing"}
                             isPublic={true}
                         />
                         <ProjectBox 
