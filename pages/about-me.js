@@ -20,7 +20,7 @@ const AboutMe = () => {
             <Header />
             <main className="content lg:w-11/12 md:w-full ml-auto mr-auto relative pb-10" style={{opacity: "0", transition: "opacity 3s"}}>
                 <div>
-                    <h1 className="text-5xl mt-20 font-bold">ABOUT ME</h1>
+                    <h1 className="text-5xl mt-20 font-bold lg:ml-0 ml-2">ABOUT ME</h1>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-0 mt-20" >
                         <div>
                             <div className="float-right mr-60 hidden lg:block">
@@ -28,7 +28,7 @@ const AboutMe = () => {
                             </div>
                             
                         </div>
-                        <div className="text-xl">
+                        <div className="text-xl w-11/12 ml-2">
                             <p>
                                 Hello! I am Alfred Holland, a Technology Analyst from Houston and 
                                 a graduate of Prairie View A&M University with a Bachelor of Science 

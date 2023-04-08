@@ -21,7 +21,7 @@ export default function Home() {
 
   const displayResume = (e) => {
     e.preventDefault();
-    const url = "https://drive.google.com/file/d/1k4uWGWAGltnCodfkJrWE5ibRCsohJzGl/view?usp=sharing";
+    const url = "https://drive.google.com/file/d/1ZimmUMSTcI6NjE3OVziwyDv165dGc1-g/view?usp=sharing";
     window.open(url);
   }
 

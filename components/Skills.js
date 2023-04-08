@@ -13,24 +13,32 @@ const Skills = () => {
                     <h2 className="text-3xl text-center">Front End</h2>
                     <div className="grid grid-cols-2 gap-2 mt-5">
                         <div className="text-center">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="ml-auto mr-auto" height={100} width={100} />
-                            <p className="text-center mt-2 text-lg font-semibold">HTML</p>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="ml-auto mr-auto  "height={100} width={100}/>
+                            <p className="text-center mt-2 text-lg font-semibold">ReactJS</p>
                         </div>
                         <div className="text-center">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="ml-auto mr-auto"height={100} width={100}/>
-                            <p className="text-center mt-2 text-lg font-semibold">CSS</p>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" className="ml-auto mr-auto"height={100} width={100}/>
+                            <p className="text-center mt-2 text-lg font-semibold">NextJS</p>
+                        </div>
+                        <div className="text-center mt-10">  
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" className="ml-auto mr-auto"height={100} width={100}/>
+                            <p className="text-center mt-2 text-lg font-semibold">Angular</p>
                         </div>
                         <div className="text-center mt-10">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="ml-auto mr-auto "height={100} width={100}/>
                             <p className="text-center mt-2 text-lg font-semibold">JavaScript</p>
                         </div>
                         <div className="text-center mt-10">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="ml-auto mr-auto  "height={100} width={100}/>
-                            <p className="text-center mt-2 text-lg font-semibold">ReactJS</p>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" className="ml-auto mr-auto "height={100} width={100}/>
+                            <p className="text-center mt-2 text-lg font-semibold">TypeScript</p>
                         </div>
                         <div className="text-center mt-10">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" className="ml-auto mr-auto"height={100} width={100}/>
-                            <p className="text-center mt-2 text-lg font-semibold">NextJS</p>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="ml-auto mr-auto" height={100} width={100} />
+                            <p className="text-center mt-2 text-lg font-semibold">HTML</p>
+                        </div>
+                        <div className="text-center mt-10">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="ml-auto mr-auto"height={100} width={100}/>
+                            <p className="text-center mt-2 text-lg font-semibold">CSS</p>
                         </div>
                         <div className="text-center mt-10">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" className="ml-auto mr-auto  "height={100} width={100}/>

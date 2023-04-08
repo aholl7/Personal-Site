@@ -55,7 +55,7 @@ const Portfolio = () => {
                 
                 )}
             <main className="content lg:w-11/12 md:w-full ml-auto mr-auto relative pb-10" style={{opacity: "0", transition: !hasBeenClicked ? "opacity 3s" : "none"}}>
-                <div className="md:w-full md:ml-0 md:mr-0 w-11/12 ml-auto mr-auto">
+                <div className="md:w-full md:ml-0 md:mr-0 w-full ml-auto mr-auto">
                     <div className="xl:ml-0 ml-4 mt-20">
                         <h1 className="text-5xl font-bold">PROJECTS</h1>
                         <p className="text-gray-400 mt-5">Here is a collection of my personal projects.</p>
@@ -80,7 +80,7 @@ const Portfolio = () => {
                         />
                         <ProjectBox 
                             title={"Money Watcher"}
-                            tags={["ReactJS", "NextJS", "ChakraUI", "CSS", "Firebase"]}
+                            tags={["ReactJS", "NextJS", "ChakraUI", "Firebase"]}
                             description={"Money Watcher is a web application built to aid students who are in college to budget their money."}
                             link={"https://github.com/aholl7/BudgetApplicationV2"}
                             demoLink={"https://drive.google.com/file/d/1faBNfSK26uYGnVOXLnbbjtQsbyZfwV1L/view?usp=sharing"}
