@@ -89,7 +89,7 @@ const Portfolio = () => {
                         <ProjectBox 
                             title={"Pres. U"}
                             tags={["HTML", "CSS", "JavaScript"]}
-                            description={"Presidential Understandng is an educational site that informs viewers of the site about all the presidents of the United States of America. "}
+                            description={"Presidential Understanding is an educational site that informs viewers of the site about all the presidents of the United States of America. "}
                             link={"https://github.com/aholl7/presidentalunderstanding.github.io"}
                             demoLink={"http://presidentalunderstanding-github-io.vercel.app/"}
                             isPublic={true}
